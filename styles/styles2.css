@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*INICIO HEADER */
+header{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+h1{
+    font-size: 50px;
+    position: absolute;
+    color:rgb(228, 203, 13);
+    padding: 5px;
+    top: 20%;
+    left: 50%;
+}
+
+.header .logo{
+    cursor:pointer;
+}
+
+.header .logo img{
+    height:50px ;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform:scale(1.1)
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: rgb(144, 6, 80);
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: rgb(6, 31, 130);
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #232323;
+    padding: 9px 25px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #f5f5f5;
+    color: chartreuse;
+    transform: scale(1.1);
+}
+
+/*FIN HEADER */
+
+
+/* BODY MAIN SECTION */
+body{
+    width: 100%;
+    height: 100vh;
+    display: inline;
+    background: rgb(107,0,0);
+background: linear-gradient(0deg, rgba(107,0,0,1) 0%, rgba(0,0,0,1) 67%);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    object-position: 0% 80% ;
+
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    object-position: 0% 50% ;
+}
+
+section img:hover{
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* BODY MAIN SECTION */
+
+
+/* FORM LABEL INPUTS */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px 5px;
+    color: #ccc;
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 5px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* FORM LABEL INPUTS */
+
+
+/* CARDS */
+div.card{
+    display: flex;
+    flex-direction:column;
+   
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 250px;
+    min-height: 350px;
+    border-radius: 20px;
+    background: #212121;
+    box-shadow: 5px 5px 8px #1b1b1b,
+               -5px -5px 8px #272727;
+    transition: 0.4s;
+}
+
+.caard{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:50px;
+}
+ 
+.card:hover {
+    translate: 0 -10px;
+ }
+  
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7b064e;
+    margin: 15px 0 0 10px;
+}
+  
+.card-image {
+    min-height: 150px;
+    background-color: #313131;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 3px #2f2f2f,
+              inset -5px -5px 3px #333333;
+}
+
+img{
+    
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+      
+}
+  
+.card-body {
+    margin: 10px 0 0 10px;
+    color: rgb(184, 184, 184);
+    font-size: 12px;
+}
+  
+input .button {
+    display: flex;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+  
+.by-name {
+    font-weight: 700;
+}
+
+/* CARDS */
+
+.contenedorredes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+    color: #958b8b;
+
+}
