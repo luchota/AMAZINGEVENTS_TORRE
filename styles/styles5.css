@@ -92,19 +92,20 @@ body{
 background: linear-gradient(0deg, rgba(107,0,0,1) 0%, rgba(0,0,0,1) 67%);
 }
 
+
 main{
     width: 100%;
     height: 100%;
 }
 
-section{
+div.section{
     display: flex;
     width: 100%;
     height: 250px;
     object-position: 0% 80% ;
 
 }
-section img{
+div.section img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -113,7 +114,7 @@ section img{
     object-position: 0% 50% ;
 }
 
-section img:hover{
+div.section img:hover{
     cursor:crosshair;
     width: 300px;
     opacity: 1;
@@ -156,12 +157,81 @@ div.tabla{
     margin: auto;
     align-items:center;
     justify-content: center;
+    color: rgba(236, 230, 230, 0.856);
+    padding: 30px;
 }
-.contenedorredes{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding:10px;
-    color: #958b8b;
+table {
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    width: 800px;
+    background-color: #5352521f;
+    border: 1px;
+    empty-cells: show;
+    
+}
 
+th{
+    padding: 8px; /* Espaciado interno en las celdas */
+    color: rgb(245, 243, 243);
+    text-shadow: rgb(14, 13, 13) 0 1px;
+    border-color: #ccc;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+td {
+    padding: 8px; /* Espaciado interno en las celdas */
+    text-align: center;
+    color: rgb(246, 243, 243);
+    text-shadow: rgb(16, 15, 15) 0 1px;
+}
+
+footer{
+    background: rgba 107,0,0,1;
+
+}
+.footerContainer{
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+
+.socialIcons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba 107,0,0,1;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color:rgba 107,0,0,1;
+    padding: 20px;
+    text-align: right;
+}
+
+.footerBottom p{
+    color: white;
+    opacity: 0.7;
 }

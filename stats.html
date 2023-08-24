@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles5.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a4dda79d2c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <title>Document</title>
 </head>
@@ -34,12 +34,12 @@
     <main>
         <div class="contenedor">
             <h1>Stats</h1>
-            <section>
+            <div class="section">
                 <img src="assets/optional_banner_3.jpg" alt="galeria">
-            </section>
+            </div>
         </div>
         <div class="form">
-            <form action="">
+            <form action="categories">
 
                 <label>
                     <input type="radio" name="position" value="Categoria" ><span>Categoria</span>
@@ -60,7 +60,7 @@
                     <input type="radio" name="position" value="Categoria" ><span>Categoria</span>
                 </label>
                 
-                <label for="">
+                <label>
                     <input type="text" autocomplete="off" name="text" class="input" placeholder="Search...">
                 </label>
                    
@@ -70,29 +70,62 @@
         <div class="tabla">
             <table>
                 <tr>
-                    <th>First name</th>
-                    <th>Last name</th>
+                    <th id="1" colspan="3">Event Statics</th>
+                    
                 </tr>
                 <tr>
-                    <td>John</td>
-                    <td>Doe</td>
+                    <td>Events with highest % of assistance</td>
+                    <td>Events with lowest % of assistance</td>
+                    <td>Events with larger capacity</td>
                 </tr>
                 <tr>
-                    <td>Jane</td>
-                    <td>Doe</td>
+                    <td colspan="3">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
                 </tr>
+                <tr>
+                    <th id="2" colspan="3">Upcoming events statistics by category</th>
+                    
+                </tr>
+                <tr>
+                    <td>Categories</td>
+                    <td>Revenues</td>
+                    <td>Percentage of assistance</td>   
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <th id="3" colspan="3">Past events statistics by category</th>
+                    
+                </tr>
+                <tr>
+                    <td>Categories</td>
+                    <td>Revenues</td>
+                    <td>Percentage of assistance</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            
             </table>
         </div>
     </main>
     <footer>
-        <div class="contenedorfoot">
-            <h2 class="footertitle">Contact Us </h2>
-        </div>
-        <div class="contenedorredes">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023</p>
+                </div>    
+            </div>  
+        </div>        
     </footer>
 </body>
 

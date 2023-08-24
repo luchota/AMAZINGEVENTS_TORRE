@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles3.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a4dda79d2c.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -33,12 +34,12 @@
     <main>
         <div class="contenedor">
             <h1>Upcoming Events</h1>
-            <section>
+            <div class="section">
                 <img src="assets/optional_banner_4.jpg" alt="galeria">
-            </section>
+            </div>
         </div>
         <div class="form">
-            <form action="">
+            <form action="categories">
 
                 <label>
                     <input type="radio" name="position" value="Categoria" ><span>Categoria</span>
@@ -59,7 +60,7 @@
                     <input type="radio" name="position" value="Categoria" ><span>Categoria</span>
                 </label>
                 
-                <label for="">
+                <label>
                     <input type="text" autocomplete="off" name="text" class="input" placeholder="Search...">
                 </label>
                    
@@ -124,14 +125,16 @@
         
     </main>
     <footer>
-        <div class="contenedorfoot">
-            <h2 class="footertitle">Contact Us </h2>
-        </div>
-        <div class="contenedorredes">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023</p>
+                </div>    
+            </div>  
+        </div>        
     </footer>
 </body>
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles4.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a4dda79d2c.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -33,17 +34,15 @@
     <main>
         <div class="contenedor">
             <h1>Contact Us</h1>
-            <section>
+            <div class="section">
                 <img src="assets/optional_banner_1.jpg" alt="galeria">
-            </section>
+            </div>
         </div>
         
-        </div>
-
         <div class="conteeiner">
             <form action="formulario-contacto" method="get">	
-                <input name="nombre" type="text" placeholder="Name" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
-                <input name="email" type="email" placeholder="Email" required />	
+                <input name="nombre" type="text" placeholder="Name" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus>
+                <input name="email" type="email" placeholder="Email" required>	
                 <textarea name="consulta" placeholder="¿How can we help you?" rows="6" required></textarea>
                 <button id="enviar" name="enviar" type="submit" class="btn">Send</button>
              </form>       
@@ -52,14 +51,16 @@
     </main>
 
     <footer>
-        <div class="contenedorfoot">
-            <h2 class="footertitle">Contact Us </h2>
-        </div>
-        <div class="contenedorredes">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023</p>
+                </div>    
+            </div>  
+        </div>        
     </footer>
 </body>
 
