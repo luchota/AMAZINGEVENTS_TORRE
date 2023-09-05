@@ -157,53 +157,53 @@ label{
 
 
 /* CARDS */
-div.card{
-    display: flex;
-    flex-direction:column;
-   
-}
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    width: 250px;
-    min-height: 350px;
-    border-radius: 20px;
-    background: #212121;
-    box-shadow: 5px 5px 8px #1b1b1b,
-               -5px -5px 8px #272727;
-    transition: 0.4s;
+section{
+    background: rgb(107,0,0);
+    background: linear-gradient(0deg, rgba(107,0,0,1) 0%, rgba(0,0,0,1) 67%);
 }
 
-.caard{
+.card{
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top:50px;
+    width: 300px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: auto;
+    box-sizing: border-box;
 }
- 
-.card:hover {
-    translate: 0 -10px;
- }
-  
-.card-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #7b064e;
-    margin: 15px 0 0 10px;
+.card.img{
+    width:50%;
+    border-radius: 5px;
 }
+div.event-card {
+    width: 300px; /* Establece el ancho de cada card según tus preferencias */
+    min-height: 300px;
+    margin: 10px; /* Agrega un margen entre las cards */
+    display: inline-block; /* Coloca las cards en línea una al lado de la otra */
+    vertical-align: top; /* Alinea las cards en la parte superior */
+    padding: 10px; /* Agrega un relleno dentro de cada card */
+    box-sizing: border-box;
+  }
   
-.card-image {
-    min-height: 150px;
-    background-color: #313131;
-    border-radius: 15px;
-    box-shadow: inset 5px 5px 3px #2f2f2f,
-              inset -5px -5px 3px #333333;
+.card-events{
+    flex: 1; /* Hace que el contenido se expanda verticalmente para igualar las alturas */
+    font-size: 12px;
+    padding: 10px; /* Relleno dentro de cada tarjeta */
+}
+.card-title{
+    font-size: 15px;
+    color: #ffffff;
 }
 
+.card.card-events{
+    background-color: #f6e2e2a4;
+}
+
+#contenedorEventos.row{
+    justify-content: space-around;
+    
+}
 img{
     
     display: block;
@@ -212,12 +212,7 @@ img{
     border-radius: 15px;
       
 }
-  
-.card-body {
-    margin: 10px 0 0 10px;
-    color: rgb(184, 184, 184);
-    font-size: 12px;
-}
+
   
 input .button {
     display: flex;
