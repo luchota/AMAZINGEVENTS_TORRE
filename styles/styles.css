@@ -126,7 +126,14 @@ div.section img:hover{
 
 
 /* FORM LABEL INPUTS */
-form{
+div.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px 5px;
+    color: #ccc;
+}
+.filter{
     display: flex;
     align-items: center;
     justify-content: space-around;
