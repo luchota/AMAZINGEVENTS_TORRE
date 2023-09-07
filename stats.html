@@ -70,48 +70,45 @@
         <div class="tabla">
             <table>
                 <tr>
-                    <th id="1" colspan="3">Event Statics</th>
-                    
+                    <th id="1" colspan="3">Estadísticas de Eventos</th>
+                </tr>
+                <!-- Añade estas filas para mostrar los resultados -->
+                <tr>
+                    <td>Evento con mayor porcentaje de asistencia:</td>
+                    <td id="eventHighestAssistance"></td>
                 </tr>
                 <tr>
-                    <td>Events with highest % of assistance</td>
-                    <td>Events with lowest % of assistance</td>
-                    <td>Events with larger capacity</td>
+                    <td>Evento con menor porcentaje de asistencia:</td>
+                    <td id="eventLowestAssistance"></td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        &nbsp;&nbsp;&nbsp;
-                    </td>
+                    <td>Evento con mayor capacidad:</td>
+                    <td id="eventHighestCapacity"></td>
                 </tr>
-                <tr>
-                    <th id="2" colspan="3">Upcoming events statistics by category</th>
-                    
-                </tr>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of assistance</td>   
-                </tr>
+                <!-- Fin de las filas de resultados -->
                 <tr>
                     <td colspan="3">
                         &nbsp;&nbsp;&nbsp;
                     </td>
                 </tr>
                 <tr>
-                    <th id="3" colspan="3">Past events statistics by category</th>
-                    
+                    <th id="2" colspan="3">Estadísticas de Próximos Eventos por Categoría</th>
                 </tr>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of assistance</td>
-                </tr>
+                <!-- Otras filas de estadísticas aquí -->
                 <tr>
                     <td colspan="3">
                         &nbsp;&nbsp;&nbsp;
                     </td>
                 </tr>
-            
+                <tr>
+                    <th id="3" colspan="3">Estadísticas de Eventos Anteriores por Categoría</th>
+                </tr>
+                <!-- Otras filas de estadísticas aquí -->
+                <tr>
+                    <td colspan="3">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
             </table>
         </div>
     </main>
@@ -127,6 +124,8 @@
             </div>  
         </div>        
     </footer>
+    
+    <script src="/js/stats.js"></script>
 </body>
 
 </html>        

@@ -38,7 +38,7 @@ const categories = [...new Set(data.events.map((event) => event.category))];
   
     if (filteredEvents.length === 0) {
       const noResultsMessage = document.createElement("p");
-      noResultsMessage.textContent = "No se encontraron resultados.";
+      noResultsMessage.textContent = "Category not found.";
       contenedorEventos.appendChild(noResultsMessage);
     } else {
       for (const event of filteredEvents) {
@@ -54,12 +54,9 @@ const categories = [...new Set(data.events.map((event) => event.category))];
             <img src="${event.image}" class="card-img-top" alt="${event.name}">
             <div class="card-body d-flex flex-column justify-content-center">
                 <h5 class="card-title">${event.name}</h5>
-                <h5 class="card-title">${event.date}</h5>
                 <p class="card-text">${event.description}</p>
-                <p class="card-text">${event.category}</p>
-                <p class="card-text">${event.place}</p>
                 <p>$${event.price}</p>
-                <a href="./details.html" id=${event.id} class="btn btn-dark">Details</a>
+                <a href="./details.html?eventId=${event._id}" class="btn btn-dark details-button">Details</a>
             </div>
         </div>
   </div>
@@ -90,12 +87,9 @@ for (const event of data.events) {
             <img src="${event.image}" class="card-img-top" alt="${event.name}">
             <div class="card-body d-flex flex-column justify-content-center">
                 <h5 class="card-title">${event.name}</h5>
-                <h5 class="card-title">${event.date}</h5>
                 <p class="card-text">${event.description}</p>
-                <p class="card-text">${event.category}</p>
-                <p class="card-text">${event.place}</p>
                 <p>$${event.price}</p>
-                <a href="./details.html" id=${event.id} class="btn btn-dark">Details</a>
+                <a href="./details.html?eventId=${event._id}" class="btn btn-dark details-button">Details</a>
             </div>
         </div>
   </div>
@@ -104,6 +98,11 @@ for (const event of data.events) {
  
   contenedorEventos.appendChild(card);
 }
+
+
+
+
+
 
 });
 
