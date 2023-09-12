@@ -89,7 +89,8 @@ body{
     height: 100vh;
     display: inline;
     background: rgb(107,0,0);
-background: linear-gradient(0deg, rgba(107,0,0,1) 0%, rgba(0,0,0,1) 67%);
+    background: linear-gradient(0deg, rgba(107,0,0,1) 0%, rgba(0,0,0,1) 67%);
+   
 }
 
 
@@ -152,40 +153,36 @@ label{
 
 /* FORM LABEL INPUTS */
 
-div.tabla{
-    display: flex;
-    margin: auto;
-    align-items:center;
-    justify-content: center;
-    color: rgba(236, 230, 230, 0.856);
-    padding: 30px;
+/* Estilos para la tabla */
+#statsTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    display: flex; 
+    flex-direction: column; 
 }
-table {
-    border-collapse: collapse; /* Combina los bordes de las celdas */
-    width: 800px;
-    background-color: #5352521f;
-    border: 1px;
-    empty-cells: show;
-    
-}
-
-th{
-    padding: 8px; /* Espaciado interno en las celdas */
-    color: rgb(245, 243, 243);
-    text-shadow: rgb(14, 13, 13) 0 1px;
-    border-color: #ccc;
-    text-align: left;
-    padding-left: 20px;
-}
-
-
-td {
-    padding: 8px; /* Espaciado interno en las celdas */
+  
+#statsTable th, #statsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
-    color: rgb(246, 243, 243);
-    text-shadow: rgb(16, 15, 15) 0 1px;
+}
+  
+#statsTable th {
+    background-color: #f2f2f2;
+    color: white;
 }
 
+
+h2{
+    color:#ddd
+}
+th{
+    color: #ccc;
+}
+tr{
+    color: #ccc;
+}
 footer{
     background: rgba 107,0,0,1;
 
